@@ -1,0 +1,99 @@
+.footer {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.reseaux {
+
+    height: 4rem;
+    background-color: #6B8AB6;
+    color: rgb(25, 32, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.icones {
+    margin-left: 0.5rem;
+    width: 50%;
+}
+
+.apropos {
+    background-color: #E7EAF1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: rgb(25, 32, 37);
+}
+
+.logoFooter {
+
+    width: 9rem;
+    filter: grayscale(85%);
+    display: none;
+}
+
+.logoFooter2 {
+
+    width: 9rem;
+    filter: grayscale(85%);
+    margin-bottom: 2rem;
+}
+
+.itemFooter {
+    /*margin: 2rem 15rem;*/
+    margin: 2rem 0.5rem 0;
+}
+
+.itemFooter h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.itemFooter p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.copyright {
+    background-color: #E7EAF1;
+    font-size: 0.8rem;
+    padding-bottom: 3rem;
+}
+
+
+@media screen and (min-width:1025px) {
+
+    .icones {
+        margin-left: 2rem;
+        width: 50%;
+    }
+
+    .logoFooter {
+
+        display: unset;
+    }
+
+    .logoFooter2 {
+
+        display: none;
+    }
+
+    .itemFooter {
+        margin: 2rem 7rem;
+    }
+
+}
+
+@media screen and (min-width:1500px) {
+
+    .itemFooter {
+        margin: 2rem 15rem;
+    }
+
+}

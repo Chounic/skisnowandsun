@@ -1,0 +1,81 @@
+.BottomPage {
+
+    margin-top: 3rem;
+    /*height: 35rem;*/
+    background-color: #E7EAF1;
+
+}
+
+.BottomPage h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    color: rgb(0, 49, 109);
+    font-weight: bold;
+}
+
+.carte {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.carte img {
+    display: inline-block;
+    width: 80%;
+    margin: 0 1rem;
+}
+
+.texteCarte {
+
+    margin: 2rem;
+}
+
+.texteCarte span {
+    font-family: 'Londrina Shadow', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+    color: rgb(0, 0, 0);
+  }
+
+
+
+@media screen and (min-width:1025px) {
+
+    .carte {
+
+        flex-direction: row;
+    }
+
+    .carte img {
+        width: unset;
+    }
+
+    .texteCarte {
+
+        width: 30rem;
+    }
+
+}
+
+
+@media screen and (min-width:1500px) {
+
+    .texteCarte {
+
+        width: 40rem;
+    }
+
+    .carte img {
+        width: unset;
+    }
+
+}

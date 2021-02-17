@@ -1,0 +1,212 @@
+.SearchBar {
+    background-image: url('./BGski2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    padding-top: 1rem;
+}
+
+.champs {
+
+    background-color: rgba(174, 217, 218, 0.3);
+    border-radius: 3px;
+    padding: 1rem;
+    justify-content: flex-start;
+}
+
+.departement {
+
+    background-color: #FFF;
+    border-radius: 3px;
+}
+
+.personnes {
+
+    background-color: #FFF;
+    border-radius: 3px;
+}
+
+.root {
+    text-align: center;
+}
+
+.boutonRecherche {
+    border: 3px green solid ;
+}
+
+.logo1 {
+    position: absolute;
+    width: 3.5rem;
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    opacity: 0.8;
+    top: 11%;
+    right: 2%;
+
+}
+
+.phrase1 {
+    display: none;
+    position: absolute;
+    width: 10rem;
+    top: 8rem;
+    left: 0rem;
+}
+
+.phrase3 {
+    position: absolute;
+    width: 23rem;
+    top: 32rem;
+    margin: 0 auto;
+}
+
+.bonsplans {
+    position: absolute;
+    opacity: 0.8;
+    width: 7rem;
+    top: 24rem;
+    right: 0rem;
+    /*width: 11rem;
+    top: 2.9rem;
+    right: 0rem;
+    display: none;*/
+}
+
+.MuiInputLabel-formControl {
+    left: 10px;
+}
+
+.MuiInputBase-input {
+    padding-left: 11px;
+}
+
+
+
+/****************** MEDIA QUERIES *************/
+
+@media screen and (min-width:450px) {
+    .logo1 {
+        top: 10%;
+        right: 2%;
+    }
+
+    .phrase3 {
+        width: 27rem;
+        top: 30rem;
+
+    }
+
+    .bonsplans {
+        width: 8rem;
+        top: 23rem;
+    }
+
+}
+
+
+
+@media screen and (min-width:760px) {
+
+    .champs {
+
+        justify-content: flex-start;
+    }
+
+    .logo1 {
+
+        width: 4rem;
+        top: 4rem;
+        right: 1%;
+    }
+
+    .phrase3 {
+        width: 30rem;
+    }
+
+    .bonsplans {
+        width: 11rem;
+        top: 20rem;
+    }
+
+
+
+}
+
+@media screen and (min-width:1080px) {
+
+    .champs {
+
+        justify-content: space-around ;
+    }
+
+    .logo1 {
+        top: 3rem;
+
+    }
+
+    .phrase1 {
+        width: 12rem;
+    }
+
+    .phrase3 {
+        top: 28rem;
+        width: 31rem;
+    }
+
+    .bonsplans {
+        top: 19rem;
+    }
+
+}
+
+@media screen and (min-width:1284px) {
+
+    .logo1 {
+        top: 1.5rem;
+        right: 21%;
+        width: 6.5rem;
+    }
+
+    .phrase1 {
+        width: 15rem;
+        top: 6rem;
+        left: 2rem;
+    }
+
+    .bonsplans {
+        top: 2.9rem;
+    }
+
+}
+
+@media screen and (min-width:1500px) {
+
+    .logo1 {
+        width: 9%;
+        top: 2rem;
+        right: 13%;
+    }
+
+    .phrase1 {
+        display: flex;
+        width: 13rem;
+        left: 8rem;
+        top: 8rem;
+    }
+
+    .phrase3 {
+        width: 33rem;
+    }
+
+}
+
+@media screen and (min-width:1900px) {
+
+    .phrase3 {
+        width: 35rem;
+        top: 22.5%;
+        left: 65%;
+    }
+
+}
+

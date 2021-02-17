@@ -1,0 +1,47 @@
+.ListeHotels {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3.4rem 0;
+    /*margin: 2.4rem 10%;*/
+    width: 100%;
+  }
+
+  .Resultat {
+    display: flex;
+    border: 2rem white solid;
+  }
+
+  .Banniere {
+    background-image: url('./bannière3.jpg');
+    background-size: auto;
+    background-repeat: repeat;
+    width: 200px;
+    display: none;
+  }
+
+  .classer {
+    display: inline-block;
+    text-align: center;
+    padding: 9px 5px;
+  }
+
+
+
+
+  @media screen and (min-width:1600px) {
+    .Banniere {
+      display: unset;
+      width: 200px;
+    }
+
+  }
+
+
+
+  @media screen and (min-width:1900px) {
+    .Banniere {
+      width: 450px;
+    }
+
+  }

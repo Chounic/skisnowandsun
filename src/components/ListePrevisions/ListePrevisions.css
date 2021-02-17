@@ -1,0 +1,49 @@
+.ListePrevisions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 21.6rem;
+}
+
+.Prevision {
+
+    /*border: solid red;*/
+    width: 4.9rem;
+    height: 2.5rem;
+    padding-top: .3rem;
+    display: flex;
+    border: .05rem solid #e6e6e6;
+    background-color: #fffefe;
+}
+
+.Prevision2 {
+
+    /*border: solid red;*/
+    width: 4.9rem;
+    height: 2.5rem;
+    padding-top: .3rem;
+    display: flex;
+    border: .05rem solid #f1f1f1;
+    background-color: #e8e8e8;
+}
+
+.Prevision img {
+    width: 2rem;
+    padding-left: .2rem;
+}
+
+.Prevision p {
+    /*border: solid green;*/
+    font-size: 1rem;
+    width: 2.2rem;
+}
+
+
+@media screen and (min-width:760px) {
+
+
+
+
+
+
+
+}
