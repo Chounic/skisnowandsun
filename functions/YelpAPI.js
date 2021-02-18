@@ -19,34 +19,8 @@ exports.handler = function(location, context, callback) {
         body: JSON.stringify({
           results: res
         })
-      }).then(jsonResponse => {
+      })
 
-        if (jsonResponse.businesses){
-
-            return jsonResponse.businesses.filter( business => listevilles.includes(business.location.city)).map( business => {
-    
-                    return {
-                        id: business.id ,
-                        imageSrc: business.image_url ,
-                        name: business.name ,
-                        address: business.location.address1 ,
-                        city: business.location.city ,
-                        state: business.location.state ,
-                        zipCode: business.location.zip_code ,
-                        category: business.categories[0].title ,
-                        rating: business.rating,
-                        reviewCount: business.review_count,
-                        price: business.price,
-                        phone: business.phone,
-                        score: 0
-                    }
-                
-                })
-            }
-
-
-
-      });
 
     } catch (err) {
       callback(null, {
