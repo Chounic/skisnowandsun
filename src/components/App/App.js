@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import ListeHotels from '../ListeHotels/ListeHotels';
 import SearchBar from '../SearchBar/SearchBar';
-import Yelp from '../../utilities/Yelp';
+//import Yelp from '../../utilities/Yelp';
 import Box from '@material-ui/core/Box';
 import Footer from '../Footer/Footer';
 import BottomPage from '../BottomPage/BottomPage';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import YelpAPI from "/.netlify/functions/search";
 
 
 
@@ -24,7 +25,8 @@ class App extends React.Component {
   }
 
   searchYelp(location) {
-    Yelp.search(location).then( businesses => {
+    //YelpAPI.search(location).then( businesses => {
+    YelpAPI(location).then( businesses => {
       this.setState({
         hotels: businesses 
     })
