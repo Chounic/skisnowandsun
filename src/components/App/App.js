@@ -36,7 +36,7 @@ class App extends React.Component {
 
   searchYelp = location => e => {
 
-    fetch("/.netlify/functions/YelpAPI").then( response => response.json()).then(jsonResponse => {
+    fetch("/netlify/functions/YelpAPI").then( response => response.json()).then(jsonResponse => {
       console.log(jsonResponse.total);
       if (jsonResponse.businesses){
 
