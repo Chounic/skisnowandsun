@@ -1,37 +1,18 @@
-const express = require("express"),
-  app = express(),
-  port = process.env.PORT || 5000, 
-  cors = require("cors"), 
-  fetch = require("node-fetch");
+import fetch from 'node-fetch';
 
-app.use(cors());
+const yelpApiRootUrl = 'https://api.yelp.com/v3/businesses/search?limit=50&term=hotels&location='
+const yelpApiKey = process.env.YELP_API_KEY;
 
-
-
-const apiKey = 'D5lAYwNCKx4IU2hzZ4v4Wk3BpcOObUUMEgsQPvrS0D4oY87bybWTUPCpbO2XXfk5t2hWbEkzFqQuGHfRzsEA1Cnpbm6o4Yz3D9Uda5TmeOH3L_Smqnnh5f49vwSSX3Yx';
-const url = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=50&term=hotels&location=' ;
-
-function search(){
-
-    return fetch('https://api.yelp.com/v3/businesses/search?limit=50&term=hotels&location=Savoie', {
-      headers: {
-          Authorization: `Bearer ${apiKey}`
-      },
-      
-  }).then( response => response.json()).then( data => console.log(data)).catch((err) => console.log(err));
-
-};
+exports.handler = async (event) => {
+  // We can retrive type of http method in event parameter
+  const { httpMethod } = event;
   
-search();
+  if (httpMethod === 'GET') {
+    const response = await fetch(`${yelpApiRootUrl}/movie/latest?api_key=${movieDbApiKey}`, { 'content-type': 'application/json' })  
+    const movieData = await response.text();
 
-
-
-
-
-
-app.get("/", (req, res) => {
-  res.send({ message: "We did it!" });
-});
-
-
-app.listen(port, () => console.log("Backend server live on " + port));
+    return { statusCode: 200, body: movieData };
+  }
+  
+  return { statusCode: 404 };
+}
