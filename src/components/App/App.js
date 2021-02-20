@@ -7,7 +7,7 @@ import Box from '@material-ui/core/Box';
 import Footer from '../Footer/Footer';
 import BottomPage from '../BottomPage/BottomPage';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
+import axios from "axios";
 import {listevilles} from '../../utilities/Codevilles';
 
 
@@ -24,8 +24,8 @@ class App extends React.Component {
     this.handleTriChange = this.handleTriChange.bind(this);
 
   }
-/*
-  searchYelp(location) {
+
+  /*searchYelp(location) {
     YelpAPI.search(location).then( businesses => {
       this.setState({
         hotels: businesses 
@@ -34,40 +34,25 @@ class App extends React.Component {
 
   }*/
 
-  searchYelp = location => e => {
+  searchYelp(location) {
 
-    fetch("/netlify/functions/YelpAPI").then( response => response.json()).then(jsonResponse => {
-      console.log(jsonResponse.total);
-      if (jsonResponse.businesses){
-
-          return jsonResponse.businesses.filter( business => listevilles.includes(business.location.city)).map( business => {
-
-                  return {
-                      id: business.id ,
-                      imageSrc: business.image_url ,
-                      name: business.name ,
-                      address: business.location.address1 ,
-                      city: business.location.city ,
-                      state: business.location.state ,
-                      zipCode: business.location.zip_code ,
-                      category: business.categories[0].title ,
-                      rating: business.rating,
-                      reviewCount: business.review_count,
-                      price: business.price,
-                      phone: business.phone,
-                      score: 0
-                  }
-              
-          })
-      }
-  }).then( businesses => {
-      this.setState({
-        hotels: businesses 
-    })
-    });
-
+    console.log('tutu');
+    
+    fetch("/.netlify/functions/YelpAPI"/*, {
+        params: {
+          location: "chicago,il",
+          term: "pizza"
+        }
+      }*/)
+      .then(async res => { 
+        /*res = JSON.parse(res.data.results.body);
+        const results = this.geojsonify(res.businesses);
+        this.yelpData = results;*/
+        console.log(res);
+      });
 
   }
+
 
   handleTriChange(checked) {
     this.setState({ tri: checked });
