@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import ListeHotels from '../ListeHotels/ListeHotels';
 import SearchBar from '../SearchBar/SearchBar';
-//import Yelp from '../../utilities/Yelp';
+import YelpAPI from '../../utilities/YelpAPI';
 import Box from '@material-ui/core/Box';
 import Footer from '../Footer/Footer';
 import BottomPage from '../BottomPage/BottomPage';
@@ -25,33 +25,32 @@ class App extends React.Component {
 
   }
 
-  /*searchYelp(location) {
+  searchYelp(location) {
     YelpAPI.search(location).then( businesses => {
       this.setState({
         hotels: businesses 
     })
     });
 
-  }*/
+  }
 
-  searchYelp(location) {
+  /*searchYelp(location) {
 
-    console.log('tutu');
+    console.log('netlify');
     
-    fetch("/.netlify/functions/YelpAPI"/*, {
+    axios.get("/.netlify/functions/test", {
         params: {
-          location: "chicago,il",
-          term: "pizza"
+          location: location
         }
-      }*/)
-      .then(async res => { 
-        /*res = JSON.parse(res.data.results.body);
+      })
+      .then( res => { 
+        res = JSON.parse(res.data.results.body);
         const results = this.geojsonify(res.businesses);
-        this.yelpData = results;*/
-        console.log(res);
+        this.yelpData = results;
+        console.log(res.data);
       });
 
-  }
+  }*/
 
 
   handleTriChange(checked) {
