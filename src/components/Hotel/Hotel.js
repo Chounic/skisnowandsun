@@ -2,7 +2,7 @@ import React from 'react';
 import './Hotel.css';
 import ListePrevisions from '../ListePrevisions/ListePrevisions'
 import {codevilles} from '../../utilities/Codevilles';
-import MeteoConcept from '../../utilities/MeteoConcept';
+import MeteoConcept from '../../utilities/MeteoCon';
 import badReview from './bad-review.png';
 import skiing from './skiing.png';
 import Button from '@material-ui/core/Button';

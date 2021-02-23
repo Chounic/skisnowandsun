@@ -30,4 +30,3 @@ const MeteoConcept = {
 
 };
 
-export default MeteoConcept ;

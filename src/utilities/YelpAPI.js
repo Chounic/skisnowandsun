@@ -10,7 +10,7 @@ const YelpAPI = {
 
         console.log('netlify');
 
-        return await axios.get("/.netlify/functions/test", {
+        return await axios.get("/.netlify/functions/YelpAPI", {
             params: {
               location: location
             }
