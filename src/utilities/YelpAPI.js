@@ -8,7 +8,7 @@ const YelpAPI = {
 
     async search(location) {
 
-        console.log('netlify');
+
 
         return await axios.get("/.netlify/functions/YelpAPI", {
             params: {

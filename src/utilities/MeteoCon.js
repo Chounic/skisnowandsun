@@ -5,8 +5,6 @@ const MeteoConcept = {
 
     async meteo(codeville){
 
-        console.log('netlify');
-
 
         return await axios.get('/.netlify/functions/MeteoAPI', {
             params: {
