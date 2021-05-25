@@ -34,24 +34,6 @@ class App extends React.Component {
 
   }
 
-  /*searchYelp(location) {
-
-    console.log('netlify');
-    
-    axios.get("/.netlify/functions/test", {
-        params: {
-          location: location
-        }
-      })
-      .then( res => { 
-        res = JSON.parse(res.data.results.body);
-        const results = this.geojsonify(res.businesses);
-        this.yelpData = results;
-        console.log(res.data);
-      });
-
-  }*/
-
 
   handleTriChange(checked) {
     this.setState({ tri: checked });

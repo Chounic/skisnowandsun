@@ -175,18 +175,14 @@ class SearchBar extends React.Component {
                                 onChange={this.handleLocationChange}
                                 label="Département"
                                 >
-                                {/*<MenuItem value="">
-                                    <em>None</em>
-        </MenuItem>*/}
+                                
                                 <MenuItem value="Savoie">Savoie</MenuItem>
                                 <MenuItem value="Isère">Isère</MenuItem>
                                 <MenuItem value="Hautes-Alpes">Hautes-Alpes</MenuItem>
                                 <MenuItem value="Haute-Savoie">Haute-Savoie</MenuItem>
-                                {/*<MenuItem value="Alpes-de-Haute-Provence">Alpes-de-Haute-Provence</MenuItem>*/}
+                                
                                 <MenuItem value="Alpes-Maritimes">Alpes-Maritimes</MenuItem>
-                                {/*<MenuItem value="Pyrénées">Pyrénées</MenuItem>
-                                <MenuItem value="Vosges">Vosges</MenuItem>
-                                <MenuItem value="Jura">Jura</MenuItem>*/}
+                                
                                 </Select>
                                 
                             </FormControl>

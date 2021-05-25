@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 
-//const listeStations = ['Courchevel', 'Meribel', 'Risoul', 'Puy St Vincent', 'Serre Chevalier'];
+
 
 const styles = theme => ({
     root: {
@@ -47,19 +47,6 @@ class ListeHotels extends React.Component {
 
     }
 
-    /*static getDerivedStateFromProps(props, state) {
-
-      console.log(props.tri);
-
-        if (props.hotel) {
-          if (props.tri !== state.tri) {
-            console.log('aloors');
-            return {
-              newlist: [].concat(props.hotels).sort((a, b) => b.score - a.score),
-            }
-          }
-        }
-    }*/
 
 
 
@@ -137,17 +124,7 @@ class ListeHotels extends React.Component {
                 
                 
                 
-                /* this.props.hotels[1] && <Button variant="contained" color="primary" onClick={() => {
-                let newList = [].concat(this.props.hotels).sort((a, b) => b.score - a.score);
-                  console.log(newList);
-                this.setState({
-                  newlist: newList ,
-                  tri: !this.state.tri
-                })
-
-                
                 }
-                }>Trier</Button>*/}
 
                 </Grid>
 
