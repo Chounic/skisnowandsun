@@ -1,5 +1,5 @@
 .SearchBar {
-    background-image: url('./BGski2.jpg');
+    background-image: url('../../images/SearchBar/BGski2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 25rem;
@@ -66,10 +66,6 @@
     width: 7rem;
     top: 24rem;
     right: 0rem;
-    /*width: 11rem;
-    top: 2.9rem;
-    right: 0rem;
-    display: none;*/
 }
 
 .MuiInputLabel-formControl {

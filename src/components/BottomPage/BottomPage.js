@@ -1,6 +1,6 @@
 import React from 'react';
 import './BottomPage.css';
-import carteFrance from './carteFrance.png';
+import carteFrance from '../../images/BottomPage/carteFrance.png';
 
 
 class BottomPage extends React.Component {

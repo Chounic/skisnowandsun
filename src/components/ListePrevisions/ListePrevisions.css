@@ -6,7 +6,6 @@
 
 .Prevision {
 
-    /*border: solid red;*/
     width: 4.9rem;
     height: 2.5rem;
     padding-top: .3rem;
@@ -17,7 +16,6 @@
 
 .Prevision2 {
 
-    /*border: solid red;*/
     width: 4.9rem;
     height: 2.5rem;
     padding-top: .3rem;
@@ -32,7 +30,7 @@
 }
 
 .Prevision p {
-    /*border: solid green;*/
+
     font-size: 1rem;
     width: 2.2rem;
 }

@@ -7,20 +7,13 @@ import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import Switch from '@material-ui/core/Switch';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { spacing } from '@material-ui/system';
 import SearchIcon from '@material-ui/icons/Search';
-import { CenterFocusStrong } from '@material-ui/icons';
-import logo1 from './logo1.png';
-import phrase1 from './phrase1.png';
-import phrase3 from './phrase3.png';
-import bonsplans from './bonsplans.png';
-import { Link } from 'react-router-dom';
+import logo1 from '../../images/SearchBar/logo1.png';
+import phrase1 from '../../images/SearchBar/phrase1.png';
+import phrase3 from '../../images/SearchBar/phrase3.png';
+import bonsplans from '../../images/SearchBar/bonsplans.png';
 import DateFnsUtils from '@date-io/date-fns';
 import {
   MuiPickersUtilsProvider,

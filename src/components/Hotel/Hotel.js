@@ -3,15 +3,13 @@ import './Hotel.css';
 import ListePrevisions from '../ListePrevisions/ListePrevisions'
 import {codevilles} from '../../utilities/Codevilles';
 import MeteoConcept from '../../utilities/MeteoConcept';
-import badReview from './bad-review.png';
-import skiing from './skiing.png';
+import badReview from '../../images/Hotel/bad-review.png';
+import skiing from '../../images/Hotel/skiing.png';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import PropTypes from 'prop-types';
 import { withStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { SignalWifi1BarLock, SignalWifi1BarLockSharp } from '@material-ui/icons';
-import placeholder from './placeholder.png';
-import { deepOrange } from '@material-ui/core/colors';
+import placeholder from '../../images/Hotel/placeholder.png';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 

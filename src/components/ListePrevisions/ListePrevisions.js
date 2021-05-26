@@ -1,14 +1,13 @@
 import React from 'react';
-import Prevision from '../Prevision/Prevision';
 import './ListePrevisions.css';
-import sunny from './sunny.png';
-import partlycloudy from './partlycloudy.png';
-import cloudy from './cloudy.png';
-import verycloudy from './verycloudy.png';
-import snowy from './snowy.png';
-import verysnowy from './verysnowy.png';
-import rainy from './rainy.png';
-import storm from './storm.png';
+import sunny from '../../images/ListePrevisions/sunny.png';
+import partlycloudy from '../../images/ListePrevisions/partlycloudy.png';
+import cloudy from '../../images/ListePrevisions/cloudy.png';
+import verycloudy from '../../images/ListePrevisions/verycloudy.png';
+import snowy from '../../images/ListePrevisions/snowy.png';
+import verysnowy from '../../images/ListePrevisions/verysnowy.png';
+import rainy from '../../images/ListePrevisions/rainy.png';
+import storm from '../../images/ListePrevisions/storm.png';
 
 
 class ListePrevisions extends React.Component {
