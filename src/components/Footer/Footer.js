@@ -5,7 +5,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import logo1 from '../SearchBar/logo1.png';
+import logo1 from '../../images/SearchBar/logo1.png';
 
 
 
