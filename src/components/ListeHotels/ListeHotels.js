@@ -38,12 +38,9 @@ class ListeHotels extends React.Component {
 
     componentDidMount() {
 
-
-      
       this.setState({
         loading: false,
       });
-
 
     }
 
@@ -144,7 +141,7 @@ class ListeHotels extends React.Component {
                 this.props.hotels.map( (hotel) => {
 
                   return !this.state.tri && <Hotel hotel={hotel} key={hotel.id} ville={hotel.city} />;
-                  //}
+                  
                   
                 })
                 }

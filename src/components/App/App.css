@@ -4,17 +4,6 @@ html {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 560px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-
-/* Reusable Component - Image Container */
-
-
-
 
 
 /* App Styles */
@@ -41,3 +30,12 @@ h1 span {
   width: 10rem;
   color: rgba(255, 255, 255);
 }
+
+
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 15px;
+  }
+}
+

@@ -12,20 +12,11 @@ import storm from '../../images/ListePrevisions/storm.png';
 
 class ListePrevisions extends React.Component {
 
-    constructor(props){
-        super(props);
-        this.state = {
-            /*weatherScore: [] ,*/
-        };
 
-    }
 
     componentDidMount() {
-
-
       
         this.props.loading(true);
-  
   
       }
 

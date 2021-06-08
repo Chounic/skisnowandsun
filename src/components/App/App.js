@@ -6,9 +6,7 @@ import YelpAPI from '../../utilities/YelpAPI';
 import Box from '@material-ui/core/Box';
 import Footer from '../Footer/Footer';
 import BottomPage from '../BottomPage/BottomPage';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import axios from "axios";
-import {listevilles} from '../../utilities/Codevilles';
+
 
 
 

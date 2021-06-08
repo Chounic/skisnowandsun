@@ -9,7 +9,6 @@ exports.handler = async (event, context) => {
 
 
     const { location } = event.queryStringParameters;
-    console.log(location);
 
   return fetch(encodeURI(API_ENDPOINT + location), { headers: { Accept: "application/json", Authorization: `Bearer ${REACT_APP_YELP_API_KEY}`} })
     .then((response) => response.json())

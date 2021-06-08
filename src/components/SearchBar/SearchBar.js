@@ -89,12 +89,14 @@ class SearchBar extends React.Component {
 
         super(props);
         this.state = {
-            location: '',
+            location: '', 
+            guestNumber: 1, 
             selectedDateDepart: new Date('2021-01-01T21:11:54'),
             selectedDateRetour: new Date('2021-01-01T21:11:54'),
         };
         
         this.handleLocationChange = this.handleLocationChange.bind(this);
+        this.handleGuestChange = this.handleGuestChange.bind(this);
         this.toggleSwitch = this.toggleSwitch.bind(this);
         this.handleSearch = this.handleSearch.bind(this);
         this.refreshPage = this.refreshPage.bind(this);
@@ -123,6 +125,13 @@ class SearchBar extends React.Component {
     handleLocationChange(event) {
         this.setState({
             location: event.target.value
+        })
+
+    }
+
+    handleGuestChange(event) {
+        this.setState({
+            guestNumber: event.target.value
         })
 
     }
@@ -190,7 +199,9 @@ class SearchBar extends React.Component {
                                 <Select
                                 labelId="demo-simple-select-outlined-label"
                                 id="demo-simple-select-outlined"
-                                label="NbrePersonnes"
+                                label="NbrePersonnes" 
+                                onChange={this.handleGuestChange} 
+                                value={this.state.guestNumber} 
                                 >
                                 <MenuItem value={1}>1 personne</MenuItem>
                                 <MenuItem value={2}>2 personnes</MenuItem>
