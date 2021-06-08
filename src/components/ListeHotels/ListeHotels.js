@@ -76,57 +76,68 @@ class ListeHotels extends React.Component {
             
               <div className="ListeHotels">
 
+
+
+                
+                
+                { 
+                
+                this.props.hotels[1] && 
+    
                 <Grid container item xs={12} style={{ marginBottom:'2rem', marginLeft: '5%' }}>
-
-                
-                
-                { this.props.hotels[1] && 
-                
+                <p className="classer">Classer par </p> 
                 <ButtonGroup variant="text" color="primary" aria-label="text primary button group">
-                  <p className="classer">Classer par </p> 
-                                            <Button onClick={() => {
-                let newList = [].concat(this.props.hotels).sort((a, b) => b.score - a.score);
-                  console.log('meteo');
-                this.setState({
-                  newlist: newList ,
-                  tri: true
-                })
 
-                
-                }
-                }>météo</Button>
-                                            <Button onClick={() => {
-                let newList = [].concat(this.props.hotels).sort((a, b) => b.rating - a.rating);
-                  console.log('note');
-                this.setState({
-                  newlist: newList ,
-                  tri: true
-                })
+                                            
+                        <Button onClick={() => {
+                        let newList = [].concat(this.props.hotels).sort((a, b) => b.score - a.score);
+                          console.log('meteo');
+                        this.setState({
+                          newlist: newList ,
+                          tri: true
+                        })
 
-                
-                }
-                }>note</Button>
-                                            <Button onClick={() => {
-                let newList = [].concat(this.props.hotels).sort((a, b) => b.reviewCount - a.reviewCount);
-                  console.log('avis');
-                this.setState({
-                  newlist: newList ,
-                  tri: true
-                })
+                        
+                        }
+                        }>météo</Button>
+                                            
+                        <Button onClick={() => {
+                        let newList = [].concat(this.props.hotels).sort((a, b) => b.rating - a.rating);
+                          console.log('note');
+                        this.setState({
+                          newlist: newList ,
+                          tri: true
+                        })
 
-                
-                }
-                }>nombre d'avis</Button>
-                                          </ButtonGroup>
-                
-                
-                
-                
-                
-                
-                }
+                        
+                        }
+                        }>note</Button>
+                                            
+                                            
+                        <Button onClick={() => {
+                        let newList = [].concat(this.props.hotels).sort((a, b) => b.reviewCount - a.reviewCount);
+                          console.log('avis');
+                        this.setState({
+                          newlist: newList ,
+                          tri: true
+                        })
 
+                        
+                        }
+                        }>nombre d'avis</Button>
+
+
+
+                </ButtonGroup>
+                
+                
+                
+                
                 </Grid>
+                
+                }
+
+
 
                 
                 {

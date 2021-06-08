@@ -164,7 +164,7 @@ class SearchBar extends React.Component {
                                 <Select
                                 labelId="demo-simple-select-outlined-label"
                                 id="demo-simple-select-outlined"
-                                value={this.state.value}
+                                value={this.state.location}
                                 onChange={this.handleLocationChange}
                                 label="Département"
                                 >
@@ -211,7 +211,7 @@ class SearchBar extends React.Component {
                         </Grid>
 
                         
-                        <Grid container xs={10} sm={6} md={4} lg={3}>
+                        <Grid container item xs={10} sm={6} md={4} lg={3}>
                             <MuiPickersUtilsProvider utils={DateFnsUtils} locale={frLocale}>
 
                                 <KeyboardDatePicker
